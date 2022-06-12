@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    {% if quot.name %}
+        <p>A share of {{ quot.name }} ( {{ quot.symbol }} ) costs ${{ quot.price }}.</p>
+    {% else %}
+        <p>No return to the informed quote.</p>
+    {% endif %}
+{% endblock %}
